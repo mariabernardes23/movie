@@ -69,15 +69,28 @@ export default function App() {
     setEditedMovie(null);
   }, []);
 
+  // const memoizedMovieList = useMemo(
+  //   () => (
+  //     <MovieList
+  //       movies={movies}
+  //       onEditClick={handleEditClick}
+  //       onRemoveClick={handleRemoveClick}
+  //       onMovieClick={handleMovieClick}
+  //       onCloseClick={handleCloseMovieDetails}
+  //       selectedMovie={selectedMovie}       
+  //     />
+  //   ),
+  //   [movies, handleEditClick, handleRemoveClick, handleMovieClick, handleCloseMovieDetails, selectedMovie]
+  // );
+
   const memoizedMovieList = useMemo(
     () => (
-      <MovieList
-        movies={movies}
+      <Carousel movies={movies}
         onEditClick={handleEditClick}
         onRemoveClick={handleRemoveClick}
         onMovieClick={handleMovieClick}
         onCloseClick={handleCloseMovieDetails}
-        selectedMovie={selectedMovie}       
+        selectedMovie={selectedMovie}
       />
     ),
     [movies, handleEditClick, handleRemoveClick, handleMovieClick, handleCloseMovieDetails, selectedMovie]
@@ -86,14 +99,7 @@ export default function App() {
   return (
     <main className='conteudo'>
       <Header />
-      {/* {memoizedMovieList} */}
-      <Carousel movies={movies}
-        onEditClick={handleEditClick}
-        onRemoveClick={handleRemoveClick}
-        onMovieClick={handleMovieClick}
-        onCloseClick={handleCloseMovieDetails}
-        selectedMovie={selectedMovie}
-      />
+      {memoizedMovieList}
       <MovieForm onSubmit={handleSubmitForm} editedMovie={editedMovie} />
     </main>
   );
