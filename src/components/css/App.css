@@ -1,0 +1,15 @@
+main {
+  margin: 2rem 5rem;
+}
+
+@media screen and (max-width: 900px) {
+  main {
+    margin: 2rem 5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    margin: 0.5rem 1rem;
+  }
+}

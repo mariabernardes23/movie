@@ -1,0 +1,13 @@
+*{
+  margin: 0 auto;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F9E6FF;
+}
+
+p, h2 {
+  color: darkgray;
+}

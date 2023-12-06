@@ -1,0 +1,118 @@
+.cardList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+  
+.card {
+    width: 26rem;
+    background-color: #E6FFF9;
+    padding: 1.5rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    
+}
+
+.card:hover {
+    box-shadow: 0px 16px 24px 0px rgba(0, 0, 0, 0.1), 16px 0px 24px 0px rgba(0, 0, 0, 0.1), -16px 0px 24px 0px rgba(0, 0, 0, 0.1);
+}
+
+.imgCard {
+    width: 22rem;
+    height: 22rem;
+    border-radius: 0.5rem;
+    position: relative;
+}
+  
+.imagemCard {
+    width: 22rem;
+    height: 22rem;
+    border-radius: 0.5rem;
+    position: absolute;
+}
+
+.titleCard {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+button {
+    background-color: #FFF9E7;
+    border-color: #FFF9E7;
+    border-radius: 5px;
+}
+
+.containerIcone {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icone {
+    color: #CC99FF;
+    font-size: 2rem; 
+}
+
+.synopsis, .titleCard {
+    word-wrap: break-word;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.detailsCard p {
+    margin: 0.75rem 0;
+}
+  
+@media screen and (max-width: 900px) {
+    .cardList {
+        padding: 0.5rem;
+    }
+    
+    .card {
+        width: 22rem;
+    }
+    
+    .imgCard {
+        width: 20rem;
+        height: 20rem;
+    }
+    
+    .imagemCard {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .icone {
+        color: #CC99FF;
+        font-size: 1.5rem; 
+    }
+}
+  
+@media screen and (max-width: 600px) {
+    .cardList {
+        padding: 0.5rem;
+    }
+    
+    .card {
+        width: 15rem;
+    }
+    
+    .imgCard {
+        width: 12rem;
+        height: 12rem;
+    }
+    
+    .imagemCard {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .icone {
+        color: #CC99FF;
+        font-size: 1.5rem; 
+    }
+}
+  

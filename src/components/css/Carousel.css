@@ -1,0 +1,90 @@
+.carousel {
+    margin: 2rem;
+}
+
+.card-movie{
+    background-color: #E6FFF9;
+    padding: 1.5rem;
+    border-radius: 2rem;  
+}
+
+.img-card {
+    width: 22rem;
+    height: 22rem;
+    border-radius: 0.5rem;
+    position: relative;
+}
+  
+.imagem-card {
+    width: 22rem;
+    height: 22rem;
+    border-radius: 0.5rem;
+    position: absolute;
+}
+
+.title-card {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+button {
+    background-color: #FFF9E7;
+    border-color: #FFF9E7;
+    border-radius: 5px;
+}
+
+.container-icone {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icone{
+    color: #CC99FF;
+    font-size: 2rem; 
+}
+
+.synopsis, .title-card {
+    word-wrap: break-word;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.details-card p {
+    margin: 0.75rem 0;
+}
+
+@media screen and (max-width: 900px) {
+    .img-card {
+        width: 20rem;
+        height: 20rem;
+    }
+    
+    .imagem-card {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .icone {
+        color: #CC99FF;
+        font-size: 1.5rem; 
+    }
+}
+  
+@media screen and (max-width: 600px) {
+    .img-card {
+        width: 12rem;
+        height: 12rem;
+    }
+    
+    .imagem-card {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .icone {
+        color: #CC99FF;
+        font-size: 1.5rem; 
+    }
+}
