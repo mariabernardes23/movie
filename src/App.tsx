@@ -1,6 +1,5 @@
 import { useState, useEffect, useMemo, useRef, useCallback } from 'react';
 import Header from './components/Header';
-import MovieList from './components/MovieList';
 import MovieForm from './components/MovieForm';
 import { InfoMovie } from './components/MovieForm';
 import './components/css/App.css'
@@ -68,20 +67,6 @@ export default function App() {
     setSelectedMovie(null);
     setEditedMovie(null);
   }, []);
-
-  // const memoizedMovieList = useMemo(
-  //   () => (
-  //     <MovieList
-  //       movies={movies}
-  //       onEditClick={handleEditClick}
-  //       onRemoveClick={handleRemoveClick}
-  //       onMovieClick={handleMovieClick}
-  //       onCloseClick={handleCloseMovieDetails}
-  //       selectedMovie={selectedMovie}       
-  //     />
-  //   ),
-  //   [movies, handleEditClick, handleRemoveClick, handleMovieClick, handleCloseMovieDetails, selectedMovie]
-  // );
 
   const memoizedMovieList = useMemo(
     () => (
